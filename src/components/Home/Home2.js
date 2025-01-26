@@ -6,6 +6,9 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { BsFillTelephoneFill } from "react-icons/bs";
+
 
 function Home2() {
   return (
@@ -54,7 +57,7 @@ function Home2() {
               <img src={myImg} className="img-fluid" alt="avatar" style={{
                 "border-radius": '46px',
                 "width": '60%'
-              }}/>
+              }} />
             </Tilt>
           </Col>
         </Row>
@@ -77,12 +80,32 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                href="https://www.linkedin.com/in/suraj-kumar-634a12217/"
+                  href="https://www.linkedin.com/in/suraj-kumar-634a12217/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn /> 
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:surajkumarjnvr01@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <CiMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="tel:+919410322079"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                <BsFillTelephoneFill />
                 </a>
               </li>
             </ul>
