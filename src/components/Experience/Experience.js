@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ExperienceCard from "./ExperienceCards";
 import Particle from "../Particle";
 import BetterSoftwareBanner from "../../Assets/Projects/BetterSoftware.png";
+import AutocashLogo from "../../Assets/Projects/autocash.png";
 
 function Projects() {
   return (
@@ -13,15 +14,35 @@ function Projects() {
           My Recent <strong className="purple">Work Experiences</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are my previous professional experiences.
+          Here are my professional experiences.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={8} className="project-card">
+            <ExperienceCard
+              imgPath={AutocashLogo}
+              isBlog={false}
+              companyName="Autocash "
+              Designation="Full Stack Developer (March 2025 - Present)"
+              description={
+                <>
+                  <ul>
+                    <li>Contributing to the development of a scalable and efficient FinTech product.</li>
+                    <li>Optimized application performance by significantly reducing the React bundle size, resulting in faster load times and improved user experience.</li>
+                    <li>Automated the ingestion of MT940 files from AWS S3 to the Autocash platform using Windmill Flows, reducing manual intervention by 70% and streamlining financial data processing.</li>
+                  </ul>
+                  <p>
+                    <strong>Tech Stack:</strong> ReactJS, PostgreSQL, Windmill, JavaScript
+                  </p>
+                </>
+              }
+            />
+          </Col>
           <Col md={8} className="project-card">
             <ExperienceCard
               imgPath={BetterSoftwareBanner}
               isBlog={false}
               companyName="Better Software (formerly Jalan Technologies)"
-              Designation="Software Engineer (July 2024 - Present)"
+              Designation="Software Engineer (July 2024 - Feb 2025)"
               description={
                 <>
                   <ul>
